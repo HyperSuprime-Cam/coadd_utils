@@ -24,4 +24,3 @@ from .version import *
 from .makeBitMask import *
 from .utilsLib import *
 from .coadd import *
-from .scaleZeroPoint import *
