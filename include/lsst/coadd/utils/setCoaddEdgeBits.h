@@ -41,7 +41,7 @@ namespace utils {
     * @brief set edge bits of coadd mask based on weight map
     *
     * Set pixels in the image to the edge pixel when the corresponding pixel in the weight map is zero.
-    * The edge pixel is image=nan, variance=inf, mask=EDGE for masked images and image=nan for plain images.
+    * The edge pixel is image=nan, variance=inf, mask=NO_DATA for masked images and image=nan for plain images.
     *
     * @throw pexExcept::InvalidParameterException if the dimensions of coaddMask and weightMap do not match.
     */

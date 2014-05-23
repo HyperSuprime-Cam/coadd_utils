@@ -35,7 +35,7 @@ class CoaddConfig(pexConfig.Config):
     badMaskPlanes = pexConfig.ListField(
         dtype = str,
         doc = "mask planes that, if set, the associated pixel should not be included in the coadd",
-        default = ("EDGE", "SAT"),
+        default = ("NO_DATA", "SAT"),
     )
 
 
@@ -55,7 +55,7 @@ class Coadd(object):
         @param[in] wcs: WCS of coadd exposure (lsst.afw.math.Wcs)
         @param[in] badMaskPlanes: mask planes to pay attention to when rejecting masked pixels.
             Specify as a collection of names.
-            badMaskPlanes should always include "EDGE".
+            badMaskPlanes should always include "NO_DATA".
         @param[in] logName: name by which messages are logged
         """
         self._log = Log(Log.getDefaultLog(), logName)

@@ -52,7 +52,7 @@ void coaddUtils::setCoaddEdgeBits(
             ).str());
     }
     
-    afwImage::MaskPixel const edgeMask = afwImage::Mask<afwImage::MaskPixel>::getPlaneBitMask("EDGE");
+    afwImage::MaskPixel const edgeMask = afwImage::Mask<afwImage::MaskPixel>::getPlaneBitMask("NO_DATA");
 
     // Set the pixels row by row, to avoid repeated checks for end-of-row
     for (int y = 0, endY = weightMap.getHeight(); y != endY; ++y) {
