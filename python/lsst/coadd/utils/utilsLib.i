@@ -36,6 +36,7 @@ Python interface to lsst::coadd::utils functions and classes
 #include "boost/cstdint.hpp"
 #include "lsst/pex/logging.h"
 #include "lsst/afw/cameraGeom.h"
+#include "lsst/afw/geom/polygon.h"
 #include "lsst/coadd/utils.h"
 %}
 
